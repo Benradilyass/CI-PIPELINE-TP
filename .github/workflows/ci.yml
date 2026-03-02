@@ -36,6 +36,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Lunch the test 
         run: pytest tests/ -v --cov=src
+        env:
+          PYTHONPATH: ${{ github.workspace }}
   build:
     runs-on: ubuntu-latest
     needs: test
