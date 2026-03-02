@@ -1,1 +1,3 @@
-name : 
+pytest
+pytest-cov
+flake8
